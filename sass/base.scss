@@ -1,0 +1,54 @@
+body {
+    margin:0;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        scale: 2;
+        margin: 2rem;
+        font-family: 'Tradizional DEMO', sans-serif;
+    }
+}
+
+nav {
+    $border: 1px solid rgb(206, 206, 206);
+
+    height: 3rem;
+    width: 100%;
+    border-top: $border;
+    border-bottom: $border;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;;
+
+    a {
+        $space-h: 1rem;
+
+        margin-left: $space-h;
+        margin-right: $space-h;
+        color: inherit;
+        text-decoration: none;
+        font-size: 1.35rem;
+        width: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#content {
+    $margin-h: 20vw;
+
+    margin-left: $margin-h;
+    margin-right: $margin-h;
+    margin-bottom: 2rem;
+}
+
+.font-mono {
+    font-family: monospace;
+}

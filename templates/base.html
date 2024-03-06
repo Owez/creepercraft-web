@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <link href="https://fonts.cdnfonts.com/css/tradizional-demo" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sofia-sans" rel="stylesheet">
+    {% block styles %}{% endblock %}
+    <title>CreeperCraft</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>CreeperCraft</h1>
+        <nav>
+            <a href="/">Home</a>
+            <!-- <a href="/about">About</a> -->
+        </nav>
+    </div>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+
+</html>
