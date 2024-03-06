@@ -23,4 +23,4 @@ The server should be up for at least 3 years, ideally at least 5 years. World ba
 	- [ ] Get peoples names
 	- [ ] Add to the whitelist
 	- [ ] Test/restart the server
-- [ ] Change the website to say about the new stuff in [Plugins](#plugins)
+- [x] Change the website to say about the new stuff in [Plugins](#plugins)
