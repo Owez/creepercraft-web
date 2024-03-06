@@ -1,5 +1,5 @@
 body {
-    margin:0;
+    margin: 0;
     font-family: 'Sofia Sans', sans-serif;
 }
 
@@ -24,7 +24,7 @@ nav {
     border-bottom: $border;
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;;
+    margin-bottom: 2rem;
 
     a {
         $space-h: 1rem;
@@ -46,7 +46,7 @@ nav {
 
     margin-left: $margin-h;
     margin-right: $margin-h;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .font-mono {
