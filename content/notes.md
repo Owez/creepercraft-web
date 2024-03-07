@@ -24,6 +24,7 @@ Now that the server is running [GeyserMC](https://geysermc.org/) and a lot of pl
 ### Current
 Below is a list of the plugins which are currently installed:
 - [GeyserMC](https://geysermc.org/) – Allows Bedrock players to connect and play
+- [Chunky](https://hangar.papermc.io/pop4959/Chunky) – Preloads chunks for better performance
 ### Possible
 Below is a list of plugins that might be fun to add to the server:
 - Rare head drops on kills (1 in 1000 chance?)
@@ -45,9 +46,9 @@ Next steps/chores for the server to be completed:
 - [x] Migrate the server to use the Java edition
 	- [x] Figure out the best base for it post-Spigot
 	- [x] Download the files required for it
-	- [ ] Install GeyserMC
-	- [ ] Make a new startup script to properly use the resources
-	- [ ] Set the seed to `CreeperCraft` like the previous one
-	- [ ] Ensure it all works on PC and Xbox again
+	- [x] Install GeyserMC
+	- [x] Make a new startup script to properly use the resources
+	- [x] Set the seed to `CreeperCraft` like the previous one
+	- [x] Ensure it all works on PC and Xbox again
 - [ ] Figure out how to do backups
 - [ ] Style all the website up a bit more :)
