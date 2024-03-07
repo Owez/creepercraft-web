@@ -2,7 +2,6 @@
 title = "Notes"
 template = "notes.html"
 +++
-
 Notes about the upkeep of the CreeperCraft server
 ## Connecting
 - Website: [Link](https://creepercraft.online)
@@ -19,19 +18,21 @@ Notes about the upkeep of the CreeperCraft server
 ### History
 Originally, the server was intended to be completely vanilla on Bedrock, but it has been migrated to a Java server. The server runs on Java to enable plugins and PC player to be able to properly play as Java is generally nicer to work with than the more locked-down Bedrock edition. Here was the original thinking:
 
-> We do any plugins because bedrock doesn't support them. There are a few different ways to do them but none of them are good enough so might as well keep it all vanilla. There is [GeyserMC](https://geysermc.org/) for packet translation but it doesn't work on most consoles without [BedrockConnect](https://github.com/Pugmatt/BedrockConnect) and people would have to configure their Xbox which is too tricky. Therefore, no plugins 😔
+> We do any plugins because bedrock doesn't support them. There are a few different ways to do them but none of them are good enough so might as well keep it all vanilla. There is GeyserMC for packet translation but it doesn't work on most consoles without BedrockConnect and people would have to configure their Xbox which is too tricky. Therefore, no plugins 😔
 
-Now that the server is running GeyserMC and most players don't even need BedrockConnect, players on both the Java and Bedrock editions can play seamlessly, with Java plugins being [compatible](https://wiki.geysermc.org/geyser/faq/#what-plugins-dont-work-with-geyser) enough. Any plugins that are added to the server should be *light* and not really affect the vanilla experience too much.
+Now that the server is running [GeyserMC](https://geysermc.org/) and a lot of players wont even need [BedrockConnect](https://github.com/Pugmatt/BedrockConnect), players on both the Java and Bedrock editions can play nicely, with Java plugins being [compatible](https://wiki.geysermc.org/geyser/faq/#what-plugins-dont-work-with-geyser) enough. Any plugins that are added to the server should be *light* and not really affect the vanilla experience too much.
 ### Current
-There currently aren't any plugins installed.
+Below is a list of the plugins which are currently installed:
+- [GeyserMC](https://geysermc.org/) – Allows Bedrock players to connect and play
 ### Possible
-Below is a list of plugins that might be fun to add to the game:
+Below is a list of plugins that might be fun to add to the server:
 - Rare head drops on kills (1 in 1000 chance?)
 - Minor economy mod so we can trade; like item shop signs?
 - Maybe some kind of pipeline thing so we can make factories
 ## Sustainability
-The server should be up for at least 3-4 years, ideally at least 5 years – this is the minimum, not the average or maximum. World backups should *always* have an offsite backup (see [S3 Glacier](https://aws.amazon.com/s3/storage-classes/glacier/)) and ideally an onsite backup on another disk. In the future the server should be migrated from DigitalOcean and into a mini-pc. The server should aim for 5 players with 0 issues, 10 players at max without really any lag.
-## Todo
+The server should be up for at least 3-4 years, ideally at least 5 years. World backups should *always* have an offsite backup (see [S3 Glacier](https://aws.amazon.com/s3/storage-classes/glacier/)) and ideally an onsite backup on another disk. In the future the server should be migrated from DigitalOcean and into a mini-pc. The server should aim for 5 players with 0 issues, 10 players at max without really any lag.
+## Upkeep
+### Checklist
 Next steps/chores for the server to be completed:
 - [x] Get a server to get it up and running; probably DigitalOcean
 - [x] Download the Bedrock server package (see [here](https://www.minecraft.net/en-us/download/server/bedrock))
@@ -41,8 +42,12 @@ Next steps/chores for the server to be completed:
 	- [ ] Add to the whitelist
 	- [ ] Test/restart the server
 - [x] Change the website to say about the new stuff in [Plugins](#plugins)
-- [ ] Migrate the server to use the Java edition
-	- [ ] Figure out the best base for it post-Spigot
-	- [ ] Download the files required for it
+- [x] Migrate the server to use the Java edition
+	- [x] Figure out the best base for it post-Spigot
+	- [x] Download the files required for it
+	- [ ] Install GeyserMC
+	- [ ] Make a new startup script to properly use the resources
 	- [ ] Set the seed to `CreeperCraft` like the previous one
+	- [ ] Ensure it all works on PC and Xbox again
 - [ ] Figure out how to do backups
+- [ ] Style all the website up a bit more :)
